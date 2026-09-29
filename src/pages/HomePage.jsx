@@ -44,8 +44,7 @@ export default function HomePage() {
             <div className="hero-content">
               {/* Badge */}
               <div className="hero-announcement-badge">
-                <span className="badge-pulse-indicator"></span>
-                <span>Git Club CHARUSAT Showcase</span>
+                <span>Git Club CHARUSAT</span>
                 <span className="badge-sep">/</span>
               </div>
 
