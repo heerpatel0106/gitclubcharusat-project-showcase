@@ -47,7 +47,6 @@ export default function HomePage() {
                 <span className="badge-pulse-indicator"></span>
                 <span>Git Club CHARUSAT Showcase</span>
                 <span className="badge-sep">/</span>
-                <span className="badge-highlight">Problem Statement 3</span>
               </div>
 
               {/* Main Heading */}
