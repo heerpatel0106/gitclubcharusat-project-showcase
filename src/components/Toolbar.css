@@ -1,0 +1,213 @@
+/* Toolbar & Search Bar Styles */
+.search-bar-root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 0.8125rem 2.75rem 0.8125rem 2.85rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  font-size: 0.9375rem;
+  color: var(--text-main);
+  box-shadow: var(--shadow-xs);
+  transition: all var(--transition-fast);
+}
+
+.search-bar-input:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.search-bar-input::placeholder {
+  color: var(--text-light);
+}
+
+.search-clear-btn {
+  position: absolute;
+  right: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: var(--text-light);
+  background-color: var(--bg-muted);
+  transition: all var(--transition-fast);
+}
+
+.search-clear-btn:hover {
+  background-color: #e2e8f0;
+  color: var(--text-main);
+}
+
+/* Category Filter Tabs */
+.category-filter-scroll {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-filter-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-filter-scroll::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+
+.filter-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.95rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill-btn:hover {
+  background-color: var(--bg-muted);
+  border-color: var(--border-hover);
+  color: var(--text-main);
+}
+
+.pill-icon {
+  color: var(--text-light);
+}
+
+.filter-pill-btn:hover .pill-icon {
+  color: var(--brand-blue);
+}
+
+.pill-active {
+  background-color: var(--primary-900);
+  border-color: var(--primary-900);
+  color: #ffffff;
+}
+
+.pill-active:hover {
+  background-color: var(--primary-800);
+  border-color: var(--primary-800);
+  color: #ffffff;
+}
+
+.pill-active .pill-icon {
+  color: var(--accent-cyan);
+}
+
+.pill-counter {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius-full);
+  background-color: var(--bg-muted);
+  color: var(--text-subtle);
+}
+
+.counter-active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* Sort Dropdown */
+.sort-dropdown-root {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.sort-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  white-space: nowrap;
+}
+
+.sort-icon {
+  color: var(--brand-blue);
+}
+
+.sort-select-input {
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  outline: none;
+  padding-right: 0.5rem;
+}
+
+/* Empty State Card */
+.empty-state-card {
+  text-align: center;
+  background-color: var(--bg-surface);
+  border: 1.5px dashed #cbd5e1;
+  border-radius: var(--radius-xl);
+  padding: 4rem 2rem;
+  max-width: 580px;
+  margin: 3rem auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state-icon-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--brand-blue-light);
+  color: var(--brand-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.empty-state-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-900);
+  margin-bottom: 0.75rem;
+}
+
+.empty-state-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.empty-state-btn {
+  margin: 0 auto;
+}

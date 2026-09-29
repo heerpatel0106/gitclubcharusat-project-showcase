@@ -1,0 +1,209 @@
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5e1;
+}
+
+.card-media-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0b132b;
+}
+
+.card-media-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 19, 43, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.project-card:hover .card-media-overlay {
+  opacity: 1;
+}
+
+.view-detail-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--primary-900);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transform: translateY(6px);
+  transition: transform var(--transition-fast);
+}
+
+.project-card:hover .view-detail-hint {
+  transform: translateY(0);
+}
+
+.card-content {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.875rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.card-title-link {
+  color: var(--text-main);
+  transition: color var(--transition-fast);
+}
+
+.card-title-link:hover {
+  color: var(--brand-blue);
+}
+
+.card-description {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.125rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.card-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+}
+
+.tech-tag-more {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 500;
+  padding: 0.2rem 0.35rem;
+}
+
+.card-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+  gap: 0.75rem;
+}
+
+.team-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.member-avatar-chip {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  border: 2px solid var(--bg-surface);
+  margin-left: -6px;
+  letter-spacing: -0.02em;
+}
+
+.avatar-group .member-avatar-chip:first-child {
+  margin-left: 0;
+}
+
+.team-count-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.card-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.github-icon-btn {
+  padding: 0.4rem;
+  background-color: var(--bg-muted);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.github-icon-btn:hover {
+  background-color: var(--primary-900);
+  color: #ffffff;
+  border-color: var(--primary-900);
+}
+
+.view-project-btn {
+  background-color: var(--brand-blue-light);
+  color: var(--brand-blue);
+  border: 1px solid #bfdbfe;
+}
+
+.view-project-btn:hover {
+  background-color: var(--brand-blue);
+  color: #ffffff;
+  border-color: var(--brand-blue);
+}

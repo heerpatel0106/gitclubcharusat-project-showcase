@@ -1,0 +1,125 @@
+/* Categories Page Styles */
+.categories-page-root {
+  min-height: calc(100vh - var(--header-height));
+  padding-bottom: 5rem;
+}
+
+.categories-header-section {
+  padding-block: 3.5rem 2.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.categories-header-content {
+  max-width: 650px;
+}
+
+.categories-page-title {
+  font-size: 2.5rem;
+  font-weight: 850;
+  letter-spacing: -0.035em;
+  color: var(--primary-950);
+  margin-bottom: 0.75rem;
+}
+
+.categories-page-subtitle {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.categories-body-container {
+  margin-top: 3.5rem;
+}
+
+.categories-detailed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.category-block-row {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem 2.5rem;
+  box-shadow: var(--shadow-xs);
+}
+
+@media (max-width: 640px) {
+  .category-block-row {
+    padding: 1.5rem;
+  }
+}
+
+.category-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.cat-title-cluster {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .cat-title-cluster {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cat-domain-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+}
+
+.cat-domain-title {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--primary-900);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.35rem;
+}
+
+.cat-domain-desc {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  line-height: 1.55;
+}
+
+.cat-view-all-link {
+  flex-shrink: 0;
+}
+
+.cat-projects-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .cat-projects-sample-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cat-projects-sample-grid {
+    grid-template-columns: 1fr;
+  }
+}
