@@ -44,8 +44,7 @@ export default function HomePage() {
             <div className="hero-content">
               {/* Badge */}
               <div className="hero-announcement-badge">
-                <span>Git Club CHARUSAT</span>
-                <span className="badge-sep">/</span>
+                <span>GIT CLUB CHARUSAT</span>
               </div>
 
               {/* Main Heading */}
